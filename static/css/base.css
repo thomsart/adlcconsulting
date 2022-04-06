@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    background-color: #c9d5e7;
+    background-color: #eeeeff;
     max-width: 90%;
     margin-left: 5%;
 }
@@ -9,7 +9,7 @@ body
 nav
 {
     border: solid gray 1px;
-    background-color: #c9d5e7;
+    background-color: #eeeeff;
     margin-top: auto;
     display: flex;
     position: fixed;
@@ -101,33 +101,6 @@ nav
     max-height: 60%;
     margin-top: 10%;
     border-radius: 50%;
-}
-
-.block-img
-{
-    /* border: solid grey 1px; */
-    margin-top: 0%;
-}
-@media screen and (max-width: 1024px)
-{
-    .block-img
-    {
-        display: none;
-    }
-}
-.image
-{
-    /* border: solid grey 1px; */
-    border-radius: 10px;
-    max-height: 100%;
-    max-width: 100%;
-}
-@media screen and (max-width: 1024px)
-{
-    .image
-    {
-        display: none;
-    }
 }
 
 .block-space
