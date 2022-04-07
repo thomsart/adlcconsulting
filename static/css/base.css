@@ -6,7 +6,7 @@ body
 
 nav
 {
-    background-color: #b8b8b8;
+    background-color: rgb(197, 206, 224);
     display: flex;
     justify-content: space-evenly;
 }
@@ -18,89 +18,56 @@ nav
     }
 }
 
-.block-box
+img
 {
-    /* border: solid grey 1px; */
+    height: 15EM;
+    border-radius: 10EM;
+    margin-left: 5EM;
+}
+
+div
+{
+    /* border: solid rgb(126, 8, 8); */
+    border-radius: 2EM;
     display: flex;
-    justify-content: space-evenly;
+    align-content: space-between;
+    padding-left: 1EM;
+    padding-right: 1EM;
 }
 
-.block-text
+#hover:hover
 {
-    /* border: solid gray 1px; */
-    width: 70%;
-}
-@media screen and (max-width: 1024px)
-{
-    .block-text
-    {
-        width: 90%;
-    }
+    background-color: rgba(207, 202, 178, 0.5);
+    /* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
 }
 
-.block-photo-responsive
+#title
 {
-    display: none;
-}
-@media screen and (max-width: 1024px)
-{
-    .block-photo-responsive
-    {
-        display: block;
-        justify-content: center;
-        height: 20%;
-        padding-top: 10%;
-    }
+    font-size: 2EM;
 }
 
-/* .block-photo
+.div_column
 {
-    border: solid grey 1px;
-}
-@media screen and (max-width: 1024px)
-{
-    .block-photo
-    {
-        display: none;
-    }
-} */
-
-#photo-david
-{
-    border-radius: 20%;
-}
-
-.block-space
-{
-    /* border: grey 1px; */
-    display: flex;
-    height: 3em;
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    flex-direction: column;
 }
 
 footer
 {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     background-color: rgb(116, 69, 69);
-    height: 8EM;
+    height: auto;
     width: 100%;
 }
 
-
-
-
-
-
-
 h1, h2, h3, h4, p, li
 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(36, 36, 36);
-    text-align: left;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+h1, h2, h3, h4
+{
+    text-align: center;
 }
 
 a,h4
@@ -108,6 +75,7 @@ a,h4
     text-decoration: underline;
     color: rgb(36, 36, 36);
     text-shadow: none;
+    text-align: center;
 }
 a,h4:hover
 {
