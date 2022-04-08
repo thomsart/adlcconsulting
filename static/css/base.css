@@ -3,6 +3,14 @@ body
     background-image: url(consulting.jpg);
     margin: 0;
 }
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        background-image: none;
+    }
+}
+
 
 nav
 {
@@ -10,13 +18,8 @@ nav
     display: flex;
     justify-content: space-evenly;
 }
-@media screen and (max-width: 1024px)
-{
-    nav
-    {
-        height: 6%;
-    }
-}
+
+
 
 img
 {
@@ -24,31 +27,91 @@ img
     border-radius: 10EM;
     margin-left: 5EM;
 }
+@media screen and (max-width: 1024px)
+{
+    img
+    {
+        width:15EM;
+    }
+}
+
+
 
 div
 {
     /* border: solid rgb(126, 8, 8); */
-    border-radius: 2EM;
+    border-radius: 3EM;
     display: flex;
     align-content: space-between;
     padding-left: 1EM;
     padding-right: 1EM;
 }
-
-#hover:hover
+@media screen and (max-width: 1024px)
 {
-    background-color: rgba(207, 202, 178, 0.5);
-    /* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
+    div
+    {
+        flex-direction: column;
+    }
 }
-
-#title
-{
-    font-size: 2EM;
-}
-
-.div_column
+.div_column, .div_column_W50, .div_column_W30
 {
     flex-direction: column;
+}
+
+.div_column_W50
+{
+    width: 50EM;
+}
+.div_column_W30
+{
+    width: 30EM;
+}
+@media screen and (max-width: 1024px)
+{
+    .div_column_W50, .div_column_W30
+    {
+        width: 90%;
+    }
+}
+.div_column_W50:hover, .div_column_W30:hover
+{
+    background-color: rgba(207, 202, 178, 0.6);
+    /* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
+}
+@media screen and (max-width: 1024px)
+{
+    #contact, #blanck
+    {
+        display: none;
+    }
+}
+
+
+
+.title
+{
+    font-size: 2EM;
+    text-align: left;
+    line-height: 0.5EM;
+}
+
+#ornement
+{
+    height: 2EM;
+    width: 8EM;
+    margin-top: 1%;
+    margin-left: 46%;
+    margin-bottom: 1%;
+}
+
+#contact
+{
+    margin-top: 15%;
+    height: 8EM;
+}
+#contact:hover
+{
+    background-color: rgb(233, 255, 107);
 }
 
 footer
@@ -60,10 +123,19 @@ footer
     width: 100%;
 }
 
+
+
 h1, h2, h3, h4, p, li
 {
     font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
+}
+@media screen and (max-width: 1024px)
+{
+    h1, h2, h3, h4, p, li
+    {
+        font-size: 2EM;
+    }
 }
 h1, h2, h3, h4
 {
@@ -72,13 +144,11 @@ h1, h2, h3, h4
 
 a,h4
 {
-    text-decoration: underline;
     color: rgb(36, 36, 36);
     text-shadow: none;
     text-align: center;
 }
 a,h4:hover
 {
-    text-decoration: none;
     text-shadow: 0 0 0.15em white, 0 0 0.15em  white, 0 0 0.15em  white;
 }
