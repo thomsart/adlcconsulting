@@ -37,4 +37,4 @@ if __name__ == '__main__':
     run(app, host='localhost', port=8000, debug=True, reloader=True)
 else:
     print('launch on vps')
-    run(app, host='127.0.0.1', port=8001, debug=False, reloader=False)# app.run(server='gunicorn')
+    app.run(server='paste')# app.run(server='gunicorn')
