@@ -36,4 +36,4 @@ def mentions_legales():
 if __name__ == '__main__':
     run(app, host='localhost', port=8000, debug=True, reloader=True)
 else:
-    httpserver.serve(app, host='www.adlcconsulting.fr', port=8001)#app.run(server='gunicorn')
+    httpserver.serve(app, host='*', port=8001)#app.run(server='gunicorn')
