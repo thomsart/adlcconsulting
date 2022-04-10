@@ -34,8 +34,6 @@ def mentions_legales():
 
 
 if __name__ == '__main__':
-    print('launch on local')
     run(app, host='localhost', port=8000, debug=True, reloader=True)
 else:
-    print('launch on vps')
-    httpserver.serve(app, host='0.0.0.0', port=8001)# app.run(server='gunicorn')
+    httpserver.serve(app, host='www.adlcconsulting.fr', port=8001)# app.run(server='gunicorn')
