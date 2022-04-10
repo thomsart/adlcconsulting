@@ -5,6 +5,7 @@ This module is use to execute the server of the site www.thomsart.tech """
 
 import bottle
 from bottle import Bottle, route, static_file, template, run
+from paste import httpserver
 
 app = Bottle()
 
@@ -37,4 +38,4 @@ if __name__ == '__main__':
     run(app, host='localhost', port=8000, debug=True, reloader=True)
 else:
     print('launch on vps')
-    app.run(server='paste')# app.run(server='gunicorn')
+    httpserver.serve(app, host='0.0.0.0', port=8001)# app.run(server='gunicorn')
