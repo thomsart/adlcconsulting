@@ -22,14 +22,14 @@ def return_css(filename):
 def home():
     """ The path to return the home template """
 
-    return template('home', name=home)
+    return template('home.html', name=home)
 
 
 @app.route('/mentions_legales')
 def mentions_legales():
     """ The path to return the mentions legales template """
 
-    return template('mentions_legales', name=mentions_legales)
+    return template('mentions_legales.html', name=mentions_legales)
 
 
 if __name__ == '__main__':
