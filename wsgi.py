@@ -2,4 +2,7 @@
 This module is use to launch the deployement server.
 """
 
-import web_site.app
+from web_site.app import app
+
+if __name__ == "__main__":
+    app.run()
