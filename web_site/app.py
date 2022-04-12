@@ -24,4 +24,4 @@ def mentions_legales():
 if __name__ == '__main__':
     app.run(debug=True)
 else:
-    print('Sur le server!')
+    app.run(debug=False)
