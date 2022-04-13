@@ -18,6 +18,7 @@ def home():
 def mentions_legales():
     """ The path to return the mentions legales template """
 
+    print("je rentre bien dedans la donc bon putain de merde!")
     return render_template('mentions_legales.html')
 
 
