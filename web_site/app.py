@@ -7,14 +7,14 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=["GET"])
 def home():
     """ The path to return the home template """
 
     return render_template('home.html', name=home)
 
 
-@app.route('/mentions_legales')
+@app.route('/mentions_legales', methods=["GET"])
 def mentions_legales():
     """ The path to return the mentions legales template """
 
