@@ -7,7 +7,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/home', methods=["GET"])
+@app.route('/', methods=["GET"])
 def home():
     """ The path to return the home template """
 
@@ -18,7 +18,6 @@ def home():
 def mentions_legales():
     """ The path to return the mentions legales template """
 
-    print("je rentre bien dedans la donc bon putain de merde!")
     return render_template('mentions_legales.html', name=mentions_legales)
 
 
