@@ -11,7 +11,7 @@ app = Flask(__name__)
 def home():
     """ The path to return the home template """
 
-    return render_template('home.html')
+    return render_template('home.html', name=home)
 
 
 @app.route('/mentions_legales')
@@ -19,8 +19,8 @@ def mentions_legales():
     """ The path to return the mentions legales template """
 
     print("je rentre bien dedans la donc bon putain de merde!")
-    return render_template('mentions_legales.html')
+    return render_template('mentions_legales.html', name=mentions_legales)
 
 
 if __name__ == '__main__':
-    app.run(debud=True)
+    app.run()
